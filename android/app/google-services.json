@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40639751841",
+    "project_id": "tropicool-2748c",
+    "storage_bucket": "tropicool-2748c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40639751841:android:de0a150397fb46b80832e0",
+        "android_client_info": {
+          "package_name": "com.example.proj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Xu1L-NsGREeH03f6tnGIIZrh0V_DQgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
