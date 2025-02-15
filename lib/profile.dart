@@ -274,7 +274,6 @@ class _ProfileState extends State<Profile> {
                                             height:
                                                 16), // Add some space between text and loading indicator
                                         CircularProgressIndicator(
-                                          // Circular loading indicator
                                           valueColor: AlwaysStoppedAnimation<
                                                   Color>(
                                               Colors

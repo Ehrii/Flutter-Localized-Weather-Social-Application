@@ -60,9 +60,6 @@ class Weather {
       sunsetTimestamp: json['sys']['sunset'],
       timezone: json['timezone'],
       lastUpdate: json['dt'],
-
-      
-
     );
 
     

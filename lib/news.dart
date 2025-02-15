@@ -68,7 +68,7 @@ class RSSDemoState extends State<News> {
           updateTitle(feedLoadErrorMsg);
           return;
         }
-        updateFeed(result!);
+        updateFeed(result);
         updateTitle('Weather News');
       });
     } else if (selectedNews == 'No Classes') {
@@ -77,7 +77,7 @@ class RSSDemoState extends State<News> {
           updateTitle(feedLoadErrorMsg);
           return;
         }
-        updateFeed(result!);
+        updateFeed(result);
         updateTitle('No Classes');
       });
     } else if (selectedNews == 'Earth Shaker') {
@@ -86,7 +86,7 @@ class RSSDemoState extends State<News> {
           updateTitle(feedLoadErrorMsg);
           return;
         }
-        updateFeed(result!);
+        updateFeed(result);
         updateTitle('Earth Shaker FB');
       });
     }

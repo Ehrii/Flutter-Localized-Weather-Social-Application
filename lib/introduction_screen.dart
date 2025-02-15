@@ -144,7 +144,7 @@ class IntroScreen extends StatelessWidget {
             onPressed: () {},
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets
-                  .zero, // Remove padding to make the button size determined by its child
+                  .zero, 
               backgroundColor: Colors.blue,
             ),
             child: const Row(
@@ -156,7 +156,7 @@ class IntroScreen extends StatelessWidget {
                   size: 20,
                 ),
                 SizedBox(
-                    width: 5), // Adjust the spacing between the icon and text
+                    width: 5), 
                 Text(
                   "Let's Go",
                   style: TextStyle(

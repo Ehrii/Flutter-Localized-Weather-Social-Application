@@ -97,28 +97,28 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         actions: <Widget>[
           ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor:
-                        ColorPalette.darkblue, // Background color of the button
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20,
-                        vertical: 10), // Padding around the button text
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(
-                          10), // Rounded corners for the button
-                    ),
-                  ),
-                  child: const Text(
-                    'OK',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
-                  ),
-                )
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor:
+                  ColorPalette.darkblue, // Background color of the button
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 10), // Padding around the button text
+              shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.circular(10), // Rounded corners for the button
+              ),
+            ),
+            child: const Text(
+              'OK',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
+            ),
+          )
         ],
       ),
     );

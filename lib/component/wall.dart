@@ -1106,7 +1106,7 @@ class _ReportDialogState extends State<ReportDialog> {
                   selectedOption = value;
                 });
               },
-              fillColor: MaterialStateProperty.resolveWith<Color>((states) {
+              fillColor: WidgetStateProperty.resolveWith<Color>((states) {
                 if (states.contains(MaterialState.disabled)) {
                   return Colors
                       .grey; // Change to the desired color for inactive radio button
@@ -1124,7 +1124,7 @@ class _ReportDialogState extends State<ReportDialog> {
                   selectedOption = value;
                 });
               },
-              fillColor: MaterialStateProperty.resolveWith<Color>((states) {
+              fillColor: WidgetStateProperty.resolveWith<Color>((states) {
                 if (states.contains(MaterialState.disabled)) {
                   return Colors
                       .grey; // Change to the desired color for inactive radio button

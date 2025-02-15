@@ -699,7 +699,7 @@ class _DashboardState extends State<Dashboard> {
     }
     DateTime? dtTime = _weather?.datacalc;
     if (dtTime != null) {
-      formattedDtTime = DateFormat('h:mm a').format(dtTime!);
+      formattedDtTime = DateFormat('h:mm a').format(dtTime);
     } else {
       // Handle the case where dtTime is null
       formattedDtTime = 'Updating..';
@@ -1321,7 +1321,6 @@ class _DashboardState extends State<Dashboard> {
                                     scrollDirection: Axis.horizontal,
                                     child: Column(
                                       children: [
-                                        
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
@@ -1474,13 +1473,14 @@ class _DashboardState extends State<Dashboard> {
                                                         Text(
                                                             textAlign: TextAlign
                                                                 .center,
-                                                            count.toString() + " Reports",
+                                                            count.toString() +
+                                                                " Reports",
                                                             style: TextStyle(
-                                                                fontSize:MediaQuery.of(
-                                                                      context)
-                                                                  .size
-                                                                  .width *
-                                                              0.035 ,
+                                                                fontSize: MediaQuery.of(
+                                                                            context)
+                                                                        .size
+                                                                        .width *
+                                                                    0.035,
                                                                 color: ColorPalette
                                                                     .darkblue
                                                                     .withOpacity(
@@ -1510,12 +1510,11 @@ class _DashboardState extends State<Dashboard> {
                                           children: [
                                             Icon(
                                               Icons.cloudy_snowing,
-                                              color: ColorPalette
-                                                  .darkblue, // Same color as the text
+                                              color: ColorPalette.darkblue,
                                               size: MediaQuery.of(context)
                                                       .size
                                                       .width *
-                                                  0.05, // Adjust size as needed
+                                                  0.05,
                                             ),
                                             Text(
                                               "Weather Information",
@@ -3457,13 +3456,8 @@ Future<Weather?> getSavedWeather() async {
   // Get the JSON string from Shared Preferences
   String? weatherJson = prefs.getString('weatherData');
 
-  // Return null if there's no saved data
-  if (weatherJson == null) {
-    return null;
-  }
-
   // Convert the JSON string back to a Weather object
-  Map<String, dynamic> weatherMap = json.decode(weatherJson);
+  Map<String, dynamic> weatherMap = json.decode(weatherJson!);
 
   return Weather.fromJson(weatherMap);
 }
